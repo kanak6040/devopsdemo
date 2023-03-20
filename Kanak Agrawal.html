@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
+    <title>Kanak Agrawal</title>
+    <style>
+        html, body {
+            font-family: sans-serif;
+            padding: 0.5rem 0 0;
+            margin: 0;
+        }
+        .line {
+            background-color: red;
+            width: 15rem;
+            margin: auto;
+            height: 5px;
+            border-radius: 20px;
+        }
+
+        .heading {
+            color: rgb(50, 46, 46);
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 500;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 2rem 1rem;
+        }
+
+        .minibox {
+            display: inline-flex;
+            width: 100%;
+            max-width: 250px;
+        }
+        .detail {
+            background-color: white;
+            list-style-type: none;
+            border: 1px solid rgb(236, 236, 236);
+            transition: transform .2s;
+            padding: 0;
+            width: 300px;
+            margin: 0 auto;
+            -webkit-transition: 0.3s;
+        }
+        .detail li {
+            font-size: small;
+
+            text-align: center;
+            color: rgb(78, 77, 77);
+
+            padding: 1rem;
+            font-weight: 300;
+            border: rgb(255, 208, 208) 0.8px solid;
+
+        }
+
+        .plan-detail {
+            color: red !important;
+            font-size: 1.5rem !important;
+            font-weight: 500 !important;
+
+        }
+        .detail:hover {
+            box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+            background-color: rgb(255, 238, 238);
+            transform: scale(1.2);
+            color: black;
+            z-index: 2;
+        }
+
+        .pricing {
+            color: rgb(0, 0, 0);
+            font-size: 2rem;
+        }
+
+        .minibox:hover .pricing {
+            background-color: rgb(209, 50, 50);
+            color: white;
+            transition: 0s;
+        }
+        .btn {
+            background-color: rgb(209, 50, 50);
+            border: none;
+            border-radius: 15px;
+            outline: none;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            font-weight: 600;
+            font-size: 0.75rem;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 class="heading">New Pricing Tables, from v4.0</h3>
+
+    <div class="line"></div>
+    <div class="box">
+        <div class="minibox">
+
+            <u1 class="detail">
+                <li class="plan-detail">Starter</li>
+                <li class="pricing"><span class="info">$</span><span class="pricing">6.99</span> per month</li>
+                <li>2 Users</li>
+                <li>2 Workspaces</li>
+                <li>5 Clients</li>
+                <li>1GB Storage</li>
+                <li>Max file size 10mb</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li><button type="button" class="btn">Order Now</button></li>
+            </u1>
+        </div>
+
+        <div class="minibox">
+            <u1 class="detail">
+                <li class="plan-detail">Standard</li>
+                <li class="pricing"><span class="info">$</span><span class="pricing">9.99</span><br /> per month</li>
+
+                <li>5 Users</li>
+                <li>2 Workspaces</li>
+                <li>10 Clients</li>
+                <li>2.5GB Storage</li>
+                <li>Max file size 50mb</li>
+                <li>-</li>
+                <li>Tech Support</li>
+                <li>-</li>
+                <li><button type="button" class="btn">Order Now</button></li>
+
+            </u1>
+        </div>
+
+        <div class="minibox">
+            <u1 class="detail">
+                <li class="plan-detail">Professional</li>
+                <li class="pricing"><span class="info">$</span><span class="pricing">13.99</span><br /> per month</li>
+
+                <li>10 Users</li>
+                <li>10 Workspaces</li>
+                <li>15 Clients</li>
+                <li>5GB Storage</li>
+                <li>Max file size 100mb</li>
+                <li>-</li>
+                <li>Tech Support</li>
+                <li>High Security</li>
+                <li><button type="button" class="btn">Order Now</button></li>
+
+            </u1>
+        </div>
+
+        <div class="minibox">
+
+            <u1 class="detail">
+                <li class="plan-detail">Ultra</li>
+                <li class="pricing"><span class="info">$</span><span class="pricing">99.99</span><br /> per month</li>
+
+                <li>Unlimited Users</li>
+                <li>Unlimited Workspaces</li>
+                <li>40 Clients</li>
+                <li>15GB Storage</li>
+                <li>Max file size 200mb</li>
+                <li>-</li>
+                <li>Tech Support</li>
+                <li>High Security</li>
+                <li><button type="button" class="btn">Order Now</button></li>
+            </u1>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
